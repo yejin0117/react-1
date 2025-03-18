@@ -3,8 +3,6 @@
 <h2> Node.js는 무엇인가? <h2>
 
 ## 개발자
-![Ryan Dahl](https://cdn.cloudinary.com/stichting-frontend-amsterdam/image/upload/v1674813354/dev/Dahl_Ryan_wg0lg5.png)
-
 Node.js는 **라이언 달(Ryan Dahl)** 이 2009년에 개발했습니다. 당시 웹 개발은 Apache 서버를 기반으로 한 **동기식 처리 방식**이 주류였고, 확장성과 성능의 한계가 있었습니다.
 
 <hr>
@@ -16,21 +14,21 @@ Node.js는 **라이언 달(Ryan Dahl)** 이 2009년에 개발했습니다. 당�
 
 <hr>
 
-## <span style="background-color: white; color: black;">기술적 핵심</span>
+## <span>기술적 핵심</span>
 
 - **Node.js는 V8 JavaScript 엔진(Chrome에서 사용됨)을 기반으로 동작**합니다.
 - **논블로킹 I/O 모델**과 **이벤트 기반 아키텍처**를 적용해 빠른 서버 처리가 가능하게 했습니다.
 
 <hr>
 
-## <span style="background-color: white; color: black;">첫 발표와 반응</span>
+## <span>첫 발표와 반응</span>
 
 - **2009년 JSConf EU**에서 처음 공개되었으며, 많은 개발자들이 관심을 가졌습니다.
 - 기존의 서버 개발 방식과 달리 **단일 스레드 이벤트 루프 방식**이 혁신적인 개념으로 주목받았습니다.
 
 <hr>
 
-## <span style="background-color: white; color: black;">현재의 Node.js</span>
+## <span>현재의 Node.js</span>
 
 - 현재는 **오픈소스 프로젝트**로, 많은 개발자와 기업들이 기여하고 있습니다.
 - **2015년, Node.js 재단(Node.js Foundation)이 설립**되었고, 이후 OpenJS 재단과 통합되어 관리되고 있습니다.
@@ -38,7 +36,7 @@ Node.js는 **라이언 달(Ryan Dahl)** 이 2009년에 개발했습니다. 당�
 
 <hr>
 
-## <span style="background-color: white; color: black;">Node.js는 어디에 활용되는가?</span>
+## <span>Node.js는 어디에 활용되는가?</span>
 
 - **웹 서버 및 API 개발** – Express.js와 같은 프레임워크를 사용하여 **RESTful API, GraphQL 서버** 등을 구축하는 데 사용됨.
 - **실시간 애플리케이션** – 채팅 앱, 실시간 데이터 스트리밍, WebSocket 기반 서비스(예: 온라인 게임, 주식 거래 시스템) 등에 활용됨.
@@ -46,7 +44,7 @@ Node.js는 **라이언 달(Ryan Dahl)** 이 2009년에 개발했습니다. 당�
 
 <hr>
 
-## <span style="background-color: white; color: black;">Node.js가 인기를 끄는 이유?</span>
+## <span>Node.js가 인기를 끄는 이유?</span>
 
 - **비동기 이벤트 기반 아키텍처** – 논블로킹 I/O 방식으로 **빠른 성능과 높은 확장성 제공**
 - **JavaScript 풀스택 개발** – 프론트엔드와 백엔드를 같은 언어(JavaScript)로 개발 가능, **생산성 증가**
@@ -56,7 +54,7 @@ Node.js는 **라이언 달(Ryan Dahl)** 이 2009년에 개발했습니다. 당�
 
 <hr>
 
-## <span style="background-color: white; color: black;">Node.js는 앞으로도 계속 발전할까?</span>
+## <span>Node.js는 앞으로도 계속 발전할까?</span>
 
 
 - **지속적인 업데이트 및 최적화** – V8 엔진 업그레이드와 성능 개선이 계속 이루어지고 있음.
@@ -67,7 +65,7 @@ Node.js는 **라이언 달(Ryan Dahl)** 이 2009년에 개발했습니다. 당�
 
 <hr>
 
-## <span style="background-color: white; color: black;">Node.js의 장단점</span>
+## <span>Node.js의 장단점</span>
 
 ### `장점`
 
