@@ -50,7 +50,7 @@
 - 또한 파일이나 데이터베이스에서 데이터를 읽어와서 대화형 component에 전달할 수도 있습니다.
 - **full-stack App을 개발하는 것이라면 Framework을 사용하는 것이 생산성이 높습니다.**
 
-<hr  style="border:0; height:5px; background:gray;>
+<hr  style="border:0; height:5px; background:gray;">
 
 <h2 style="background-color: gray;">📌 1, 2주차 3월 13일</h2>
 <h2> Node.js는 무엇인가? <h2>
