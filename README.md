@@ -52,8 +52,9 @@
 
 <hr  style="border:0; height:5px; background:gray;">
 
-<h2>📌 1, 2주차 3월 13일
-<br> Node.js는 무엇인가? <h2>
+<h2>📌 1, 2주차 3월 13일</h2>
+
+## <span>Node.js는 무엇인가?</span>
 
 ## 개발자
 Node.js는 **라이언 달(Ryan Dahl)** 이 2009년에 개발했습니다. 당시 웹 개발은 Apache 서버를 기반으로 한 **동기식 처리 방식**이 주류였고, 확장성과 성능의 한계가 있었습니다.
