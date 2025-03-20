@@ -1,6 +1,6 @@
 <h1>202330117 송예진</h1>
 
-<h2 style="background-color: gray;">3주차 3월 13일</h2>
+<h2 style="background-color: gray;">📌 3주차 3월 13일</h2>
 
 ## <span> React Project의 구조 및 역할</span>
 
@@ -35,9 +35,24 @@
 - **중복 설치 방지지**
 - 프로젝트에 필요한 라이브러리를 쉽게 설치, 업데이트, 유지할 수 있도록 도와주는 시스템입니다.
 
+## <span> Component를 작성하는 JavaScript와 Markup</span>
+- **React component**는 JavaScrip함수입니다.
+- Reat에서 사용되는 마크업을 JSX(Javascript Syntax eXten)
 
+## <span>필요한 곳에 상호작용 기능 추가</span>
+- React component는 데이터를 수신하고, 화면에 표시해야 하는 내용을 반환합니다.
 
-<h2 style="background-color: gray;">1, 2주차 3월 13일</h2>
+## <span>full-stack App 개발을 도와주는 React Framework</span>
+- React는 라이브러리이기 때문에 component를 조합할 수 있지만 라우팅 및 데이터 가져오기 방법 등을 규정하지는 않습니다.
+- React로 전체 앱을 빌드하려면 Next.js또는 Remix와 같은 full-stack React Framework을 사용하는 것이 좋습니다.
+- React도 하나의 아키텍처입니다.
+- 따라서 이를 구현하는 Framework를 사용하면, 서버에서 실행되거나 혹은 빌드 중에도 비동기 component에서 데이터를 가져올 수도 있습니다.
+- 또한 파일이나 데이터베이스에서 데이터를 읽어와서 대화형 component에 전달할 수도 있습니다.
+- **full-stack App을 개발하는 것이라면 Framework을 사용하는 것이 생산성이 높습니다.**
+
+<hr  style="border:0; height:5px; background:gray;>
+
+<h2 style="background-color: gray;">📌 1, 2주차 3월 13일</h2>
 <h2> Node.js는 무엇인가? <h2>
 
 ## 개발자
