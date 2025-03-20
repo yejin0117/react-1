@@ -1,6 +1,6 @@
 <h1>202330117 송예진</h1>
 
-<h2>1주차 3월 13일</h2>
+<h2 style="background-color: black; color: white;">1주차 3월 13일</h2>
 <h2> Node.js는 무엇인가? <h2>
 
 ## 개발자
