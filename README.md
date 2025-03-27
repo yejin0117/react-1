@@ -2,15 +2,14 @@
 
 <h2 style="background-color: gray;">📌 4주차 3월 27일</h2>
 
-## <span>Component의 생성 및 nesting(중첩)</span>
-
+## Component의 생성 및 nesting(중첩)
 - **component**는 고유한 로직과 모양을 가진 UI의 일부
 - 버튼처럼 작을 수도 있고, 전체 페이지처럼 클 수도 있습니다.
 - 마크업을 반환(return)하는 JavaScript 함수
 - **Nesting**은 CSS선택자의 중첩 구조를 생각하면 쉽게 이해할 수 있습니다.
 - css 중첩 구조는 2023년부터 자체 지원함. 이전에는 Sass나 Lass 등을 이용할 때 사용함.
 
-## ✏️실습 ##
+## ✏️ 실습 ##
 - MyApp라는 함수형 component를 만들어 보겠습니다.
 1. 어떤 디렉토리에 파일을 만들지?
 2. 파일 이름은 뭐라고 할지?
@@ -47,6 +46,10 @@
 - { } 중괄호를 사용해서 변수나 표현식을 사용자에게 표시하도록 하는 것
 - 단순히 문자열을 전달하는 경우에는 중괄호 대신 큰 따옴표 사용
 
+## 조건부 렌더링
+- React에서 조건문을 작성하는 데에는 특별한 문법이 필요 없습니다.
+- 일반적인 자바스크립트 코드를 작성할 때 사용하는 것과 동일한 방법을 사용
+
 
 <hr>
 
@@ -58,8 +61,6 @@
 - **index.js**: React 앱의 진입점(entry point).ReactDOM.createRoot를 사용하여 App.js를 렌더링함.
 - **.gitignore**: Git에 추가하지 않을 파일 목록을 정의.
 - **pagcke.json**: 의존성 파일
-
-<hr>
 
 - **node_modules/**: 초기 node module 및 새로 설치하는 패키지가 저장됩니다. git으로 관리하지 않기 때문에 디렉토리 이름이 흐릿하게 나와 있는 것을 확인할 수 있습니다.(압축하지 말 것)
 - **public/**: 정적(static) 파일을 저장하는 디렉토리 입니다. build 후 배포할 html, CSS, JavaScript 등이 보관되는 곳입니다. 개발하면서 특별히 수정할 코드는 없습니다.
@@ -119,9 +120,7 @@
 - 사용자 경험의 희생 없이 다양한 플랫폼에 앱을 출시할 수 있습니다.
 - 기업에서는 플랫폼 간의 장벽을 허물고, 전체 기능을 협업을 통해 개발할 수 있는 팀을 구성할 수 있습니다.
 
-<hr  style="border:0; height:5px; background:gray;">
-
-<h2>📌 1, 2주차 3월 13일</h2>
+<h2  style="background-color: gray;">📌 1, 2주차 3월 13일</h2>
 
 ## <span>Node.js는 무엇인가?</span>
 
