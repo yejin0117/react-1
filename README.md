@@ -1,6 +1,25 @@
 <h1>202330117 송예진</h1>
 
-<h2 style="background-color: gray;">📌 3주차 3월 13일</h2>
+<h2 style="background-color: gray;">📌 4주차 3월 27일</h2>
+
+## <span>Component의 생성 및 nesting(중첩)</span>
+
+- **component**는 고유한 로직과 모양을 가진 UI의 일부
+- 버튼처럼 작을 수도 있고, 전체 페이지처럼 클 수도 있습니다.
+- 마크업을 반환(return)하는 JavaScript 함수
+- **Nesting**은 CSS선택자의 중첩 구조를 생각하면 쉽게 이해할 수 있습니다.
+- css 중첩 구조는 2023년부터 자체 지원함. 이전에는 Sass나 Lass 등을 이용할 때 사용함.
+
+## 실습 ##
+- MyApp라는 함수형 component를 만들어 보겠습니다.
+1. 어떤 디렉토리에 파일을 만들지?
+2. 파일 이름은 뭐라고 할지?
+3. 함수는 어떻게 구성할지?
+
+* 우리가 사용할 component는 src/ 아래 만들어야 합니다.
+* 이번에는 MyApp을 만들지 않고 기존의 App.js를 이용
+
+<h2 style="background-color: gray;">📌 3주차 3월 20일</h2>
 
 ## <span> React Project의 구조 및 역할</span>
 
