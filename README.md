@@ -19,6 +19,17 @@
 * 우리가 사용할 component는 src/ 아래 만들어야 합니다.
 * 이번에는 MyApp을 만들지 않고 기존의 App.js를 이용
 
+## export default와 export의 차이
+### Namde Exports (export)
+- 하나의 파일 안에 여러개 component가 있을 때 사용
+- component를 사용하는 쪽에서는 component 정확한 이름 명시해야 합니다.
+### Default Exports (export default)
+- 하나의 파일 안에서 하나의 component만 내보내는 경우 사용
+- component를 사용하는 쪽에서는 어떤 이름을 사용해도 상관 없습니다.
+
+
+<hr>
+
 <h2 style="background-color: gray;">📌 3주차 3월 20일</h2>
 
 ## <span> React Project의 구조 및 역할</span>
