@@ -1,5 +1,95 @@
 <h1>202330117 송예진</h1>
 
+<h2 style="background-color: gray;">📌 6주차 4월 10일</h2>
+
+## props를 통해 데이터 전달하기
+- 이제 Board에서 Square로 prop value를 전달해 보겠습니다.
+- 정상적으로 출력되는지 확인해 보세요.
+
+## 사용자와 상호작용하는 컴포넌트 만들기
+- Square 컴포넌트를 클릭하면 X로 채워지게 코드를 수정해 보겠습니다.
+1. 먼저 Square 내부에 handleClick 함수를 선언
+2. Square 컴포넌트에서 반환되는 JSX 버튼의 props에 onClick 추가
+
+- 다음으로 사각형 컴포넌트가 클릭 된 것을 기억하고 X로 채우기
+- 컴포넌트는 무언가 기억을 위해 useState라는 Hook을 제공
+- Sqaure의 현재 값을 state에 저장하고, Square가 클릭하면 값이 변경
+
+1. 파일 상단에서 useState를 import합니다.
+2. Square 컴포넌트에서 value prop을 제거합니다. 대신 useState를 사용
+3. Square 컴포넌트의 시작 부분에 useState를 호출하고, value라는 이름의 state 변수를 반환
+
+## React Developer Tools
+- React 개발자 도구를 사용하면 React 컴포넌트의 props와 state를 확인할 수 있습니다.
+- CodeSandBox의 브라우저 구역 하단에서 React 개발자 도구 탭을 찾을 수 있습니다.? 찾을 수가 없음.ㅠㅠ
+- 개발자 도구에서 component를 열면 프로젝트 관련 정보를 얻을 수 있음
+
+## 게임 완료하기
+1. State 끌어올리기
+- 현재 각 Square 컴포넌트는 게임 state의 일부를 기억합니다.
+- 틱택토 게임에서 승자를 확인하려면 Board가 9개의 Square 컴포넌트 각각의 state를 기억하고 있어야 합니다.
+- Board가 각각의 Square에서 기술적으로는 가능하지만, 코드가 이해하기 어렵고 버그에 취약하며 리팩토링하기 어렵기 때문에 권장하지 않습니다.
+- 가장 좋은 방법은 state를 각 Square가 아닌 부모 컴포넌트인 Board에 저장하는 것입니다.
+- Board 컴포넌트는 각 Square에 숫자를 전달했을 때와 같이 prop를 전달하여 각 Square에 표시할 내용을 정할 수 있습니다.
+- 여러 자식 컴포넌트에서 데이터를 수집하거 고유하려면 부모 컴포넌트에서 공유 state를 선언해야함
+- 부모 컴포넌트는 props를 통해 해당 state를 자식 컴포넌트에 전달 가능
+- 자식 컴포넌트가 서로 동기화되고 부모 컴포넌트와도 동기화 가능
+
+2. component 분리하기
+- Board와 Square 분리
+
+
+<hr/>
+
+<h2 style="background-color: gray;">📌 5주차 4월 3일</h2>
+
+## 이벤트에 응답하기
+- component 내부에 event handler 함수를 선언하면 event에 응답할 수 있습니다.
+- onClick-(handleClick)의 끝에 소괄호()가 없는 것을 주목하세요!
+- 함수를 호출하지 않고 전달만 하면 됩니다.
+- React는 사용자가 버튼을 클릭할 때 이벤트 핸들러를 호출합니다.
+
+## 화면 업데이트하기
+- component가 특정 정보를 "기억"해 두었다가 표시하기를 원하는 경우가 있습니다.
+- 예를 들어 버튼이 클릭된 횟수를 세고 싶을 수 있습니다.
+- 이렇게 하려면 component에 state를 추가하면 됩니다.
+
+<br>
+
+- 먼저, React에서 useState를 import합니다.
+- 이 코드를 보면 useState는 react 파일 안에 Named Exports로 선언되어 있는 여러 개의 component 중 하나라는 것을 알 수 있습니다.
+- 이제 component 내부에 state 변수를 선언할 수 있습니다.
+
+<br>
+
+- App.js에 CountState component를 호출합니다.
+- 버튼은 반드시 2개 이상을 만들어야 합니다.
+- 출력이 정상으로 되는지 확인하고 버튼을 테스트합니다.
+- 화면이 아래쪽으로 너무 길면 CSS를 수정해서 두 구역으로 나눠 주세요.
+
+## Hook 사용하기
+- use로 시작하는 함수를 Hook라고 합니다.
+- useState는 React에서 제공하는 내장 Hook입니다.
+- 다른 내장 Hook은 API 참고서에서 찾아볼 수 있습니다.
+- 또한 기존의 것들을 조합하여 자신만의 Hook을 작성할 수도 있습니다. 사용자 Hook
+- Hook은 다른 함수보다 더 제한적입니다.
+예를 들면
+- component 또는 다른 Hook의 상단에서만 Hook을 호출할 수 있습니다.
+- 조건이나 반복문에서 useState를 사용하고 싶다면 새 컴포넌트를 추출하여 그곳에 넣으세요
+
+## Hook의 사용 규칙
+- Hook은 React의 렌더링 및 상태 관리 메커니즘과 밀접하게 연결되어 있으며, 아래와 같은 규칙을 따라야 합니다.
+1. 최상위에서만 호출해야 한다.<br>
+**if, for, while 등의 블록 내부에서 Hooks를 호출**
+2. React 함수형 component 또는 사용자 Hook 내부에서만 사용 가능<br>
+
+## component 간 데이터 공유
+- 사이트에서는 MyButton으로 설명하고 있지만, 우리는 CountState로 작성했던 것을 기억하고 사이트의 설명을 봐야 합니다.
+- 하지만 데이터를 공유하고 항상 함께 업데이트하기 위한 component가 필요한 경우가 많습니다.
+- 두개의 CountState2 component가 동일한 count를 표시하고 함께 업데이트하려면, state를 개별 버튼에서 모든 버튼이 포함된 가장 가까운 component 안으로 이동해야 합니다.
+- 여기서 이야기하느 제일 가까운 component는 App component입니다.
+
+
 <h2 style="background-color: gray;">📌 4주차 3월 27일</h2>
 
 ## Component의 생성 및 nesting(중첩)
@@ -49,6 +139,15 @@
 ## 조건부 렌더링
 - React에서 조건문을 작성하는 데에는 특별한 문법이 필요 없습니다.
 - 일반적인 자바스크립트 코드를 작성할 때 사용하는 것과 동일한 방법을 사용
+
+## Tutorial 환경설정정
+- 문서에서는 CodeSandBox를 사용해서 학습을 진행한다고 합니다.
+- 그러나 우리는 이미 CRA로 프로젝트를 생성하는 방법을 알고 있기 때문에 local에 프로젝트를 생성하고 학습을 진행합니다.
+- 만일 현재 사용하고 있는 프로젝트를 생성하고 바로 commit을 했다면, switch 명령으로 처음 commit으로 이동한 후 새로운 branch를 만들어 진행하면 됩니다.
+
+## 초기 코드 살펴보기
+- 프로젝트를 새로 생성하거나, 초기 commit으로 switch해서 새 branch를 만듭니다.
+- src/에 있는 파일 중 불필요한 파일을 삭제합니다. 반드시 삭제해야 하는 것은 아닙니다.
 
 
 <hr>
