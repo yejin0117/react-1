@@ -1,5 +1,52 @@
 <h1>202330117 송예진</h1>
 
+<h2 style="background-color: gray;">📌 6주차 4월 17일</h2>
+
+## state 끌어올리기
+- handleClick 함수는 JavaScript의 slice() 배열 메서드를 사용하여 squares 배열의 사본인 nextSquares를 생성합니다.
+- 그 다음 handleClick 함수는 nextSquares 배열의 첫 번째 Squares(indes [0])에 X를 추가하며 업데이트
+
+- i를 handleClick에 전달해야 함
+- Square의 onSquareClick prop를 아래와 같이 JSX에서 직접 handleClick(0)으로 설정할 수도 있지만, 이 방법은 작동하지 않음
+
+=> 객체만 전달해라
+
+- () => handleClick(0)은 화살표 함수로, 함수를 짧게 정의하는 방법입니다.
+- Square가 클릭되면 => "화살표" 뒤의 코드가 실행되어 handleClick(0)을 호출합니다.
+- handleClick(0) 함수를 화살표 함수가 호출하고, 화살표 함수를 Sqaure에 전달
+- 나머지 8개의 Sqaure 컴포넌트 수정
+</br></br></br>
+
+- 왼쪽 위 사각형 클릭시 button이 Square로부터 onClick prop으로 받은 함수가 실행됨
+- squares 배열의 첫번째 엘리먼트를 null에서 X로 업데이트
+- Board 컴포넌트의 square state가 업데이트되어 Board와 그 모든 자식이 다시 렌더링됨
+- 최종적으로 사용자는 왼쪽 위 사각형을 클릭한 후 비어있는 사각형이 X로 변경된 것을 확인
+</br></br></br>
+
+- DOM &lt; button &gt; 엘리먼트의 onClick 어트리뷰트(속성)는 빌트인 컴포넌트이기 때문에 React에서 특별한 의미
+- 사용자 정의 컴포넌트, 예를 들어 Square의 경우 이름은 사용자가 원하는대로 지을 수 있음
+- Square의 onSquareClick prop나 Board의 handleClick 함수에 어떠한 이름을 붙여도 코드는 동일하게 작동
+- React에서는 주로 이벤트를 나타내는 prop에는 onSomething과 같은 이름을 사용하고, 이벤트를 처리하는 함수를 정의할 때는 handleSomething과 같은 이름을 사용
+
+## 불변성이 왜 중요할까요
+- 원본 데이터를 직접 변형하지 않음으로써 몇가지 이점을 얻을 수 있음
+
+1. 불변성을 이용하면 복잡한 기능을 훨씬 쉽게 구현가능
+- 특정 작업을 실행 취소하고 다시 실행하는 기능은 앱의 일반적인 요구사항
+- 이전 버전의 데이터를 그래돌 유지하여 나중에 재사용할 수 있음
+
+2. 불변성을 사용하는 것의 또 다른 장점이 있음
+- 부모 컴포넌트의 state가 변경되면 모든 자식 컴포넌트가 자동으로 다시 렌덜이 됨
+- 변경사항이 없는 자식 컴포넌트도 포함
+- 사용자에게 보이는 것은 아니지만, 트리의 영향을 받지 않는 부분의 리렌더링을 피하는 것이 좋음
+- 데이터의 변경 여부를 저렴한 비용으로 판단 가능
+
+## 구조 분해 할당 (Destructuring Assignment)
+- 비구조화 할당, 구조화 할당이라고도 번역되지만 구조 분해 할당을 많이 사용합니다.
+- 배열이나 객체의 구조를 해체하여 내부 값을 개발 변수에 쉽게 할당하는 방법
+- 코드의 간결성과 가독성을 높임
+- map함수에서도 사용되는 아주 많이 사용하는 방법
+
 <h2 style="background-color: gray;">📌 6주차 4월 10일</h2>
 
 ## props를 통해 데이터 전달하기
