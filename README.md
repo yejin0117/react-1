@@ -1,5 +1,5 @@
 <h1>202330117 송예진</h1>
-
+<img src="https://ghchart.rshah.org/yejin0117"/>
 <h2 style="background-color: gray;">📌 11주차 5월 15일</h2>
 
 ## 어떤 것이 state가 되어야 할까요?
