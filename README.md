@@ -1,9 +1,81 @@
 <h1>202330117 송예진</h1>
 <img src="https://ghchart.rshah.org/219138/yejin0117"/>
+<h2 style="background-color: gray;">📌 14주차 6월 5일</h2>
+
+## 처음부터 React 앱 만들기
+### 5-3 기존 프로젝트에 React 추가
+
+### [2단계: 페이지 어디서든 React 컴포넌트 렌더링하기]
+- HTML 태그에 고유한 id 어트리뷰트를 추가하기
+- 이렇게 하면 document.getElementById로 HTML 엘리먼트를 찾아
+- createRoot 사용법 문서 읽어보기
+- 점진적으로 **"상위 구조로 확장"**
+- React의 장점을 최대한 활용하기 위해 React 프레임워크로 마이그레이션하는 것을 권장
+
+### [기존 네이티브 모바일 앱에서 React Native 사용하기]
+- React Native 역시 기존 네이티브 앱에 점진적으로 통합가능
+- 안드로이드(Java 또는 Kotlin)나 iOS(Objective-C 또는 Swift) 앱을 개발하고 있다면, 가이드를 참고하여 React Native 화면을 추가해보기
+
+# 설정하기
+- VS Code는 현재 가장 많이 사용되는 에디터 중 하나
+
+### [에디터 기능 추천]
+1. Linting
+- 실시간으로 문제 찾아 줌으로써 빠른 문제해결 가능
+- ESLint는 많이 사용되고 JavaScript를 위한 오픈소스 린터
+- eslint-plugin-react-hooks 규칙을 활성화했느지 확인하세요. 이 규칙은 필수적
+
+2. Formatting
+- 탭 vs 공백
+- Prettier를 사용하면 코드 형식을 깔끔하게 정리
+- Prettier 실행하면 모든 탭은 공백으로 전환, 들여쓰기, 따옴표 형식과 같은 요소들 전부 설정에 부합되도록 수정
+
+## [TypeScript]
+- JavaScript 코드 베이스에 타입 정의를 추가하는데 너리 사용되는 방법
+- JSX를 지원, @types/react 및 @types/react-dom을 추가하면 완전한 React Web 지원을 받을 수 있음
+- **학습내용**
+- React 컴포넌트가 있는 TypeScript
+- Hooks 타이핑 예시
+- @types/react의 일반적인 타입
+- 추가 학습 위치
+
+## [TypeScript] 사용하기 - 설치
+- 프로덕션 수준의 React 프레임워크는 TypeScript 사용을 지원
+- Next.js
+- Remix
+- Gatsby
+- Expo
+
+### [기존 React 프로젝트에 TypeScript 추가하기]
+- tsconfig.json에 설정해야함
+- 1. dom은 반드시 lib 포함 (지정되지 않으면 기본적으로 dom이 포함)
+- 2. jsx를 유효한 옵션 중 하나로 설정
+
+### [React 컴포넌트에 TypeScript 사용하기]
+- JSX를 포함하고 있는 모든 파일은 .tsx 파일 확장자를 사용해야함
+- 이것은 이 파일이 JSX를 포함하고 있음을 TypeScript에 알려주는 TypeScript 전용 확장자
+- 타입 검사를 받으려면 TypeScript playground를 사용
+
+### [React 컴포넌트에 TypeScript 사용하기] - Hooks 예시
+- useCallback 함수 자체를 기억해서 불필요한 재생성을 막기위해 사용
+
+### [React 컴포넌트에 TypeScript 사용하기] - 유용한 타입들
+- [DOM 이벤트]
+- 이벤트 작업할 때 이벤트 핸들러로 이벤트의 타입을 추론 가능
+
+# React 프로젝트 배포(feat.GitHub)
+### GitHub Pages 기본 저장소란?
+- GitHub Pages 저장소를 생성
+- .com이 아니라 .io
+- GitHub에서 직접 저장소를 만들었다면 clone해서 locald에서 작업하고 push
+- 정적 호스팅을 하기 위해서 반드시 필요한 저장소
+- 다른 이름의 저장소도 페이지로 사용 가능
+
+
 <h2 style="background-color: gray;">📌 13주차 5월 29일</h2>
 
 ## 처음부터 React 앱 만들기
-### [애플리케이션 성능 개선선]
+### [애플리케이션 성능 개선]
 - 선택한 빌드 도구는 단일 페이지 앱(SPA)만 지원
 - 서버 사이드 렌더링 SSG와 유사하지만 매 요청 시 서버에서 정적 페이지 생성
 - 정적 사이트 생성(SSG) 빌드 시 한 번에 모든 정적 페이지 생성
